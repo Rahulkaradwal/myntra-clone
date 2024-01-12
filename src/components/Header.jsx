@@ -1,3 +1,6 @@
+import { IoPersonOutline, IoBagHandleOutline } from "react-icons/io5";
+import { BsChatLeftHeart } from "react-icons/bs";
+
 function Header() {
   return (
     <header>
@@ -29,21 +32,17 @@ function Header() {
       </div>
       <div className="action_bar">
         <div className="action_container">
-          <span className="material-symbols-outlined action_icon">person</span>
+          <IoPersonOutline />
           <span className="action_name">Profile</span>
         </div>
 
         <div className="action_container">
-          <span className="material-symbols-outlined action_icon">
-            favorite
-          </span>
+          <BsChatLeftHeart />
           <span className="action_name">Wishlist</span>
         </div>
 
         <a className="action_container" href="pages/bag.html">
-          <span className="material-symbols-outlined action_icon">
-            shopping_bag
-          </span>
+          <IoBagHandleOutline />
           <span className="action_name">Bag</span>
           <span className="bag-item-count">0</span>
         </a>
