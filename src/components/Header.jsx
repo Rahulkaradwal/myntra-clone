@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <>
+    <header>
       <div className="logo_container">
         <a href="#">
           <img
@@ -48,7 +48,7 @@ function Header() {
           <span className="bag-item-count">0</span>
         </a>
       </div>
-    </>
+    </header>
   );
 }
 

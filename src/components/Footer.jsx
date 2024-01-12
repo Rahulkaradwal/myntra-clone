@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <>
+    <footer>
       <div className="footer_container">
         <div className="footer_column">
           <h3>ONLINE SHOPPING</h3>
@@ -43,7 +43,7 @@ function Footer() {
       <div className="copyright">
         © 2023 www.myntra.com. All rights reserved.
       </div>
-    </>
+    </footer>
   );
 }
 
