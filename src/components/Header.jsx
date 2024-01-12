@@ -1,17 +1,18 @@
 import { IoPersonOutline, IoBagHandleOutline } from "react-icons/io5";
 import { BsChatLeftHeart } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
       <div className="logo_container">
-        <a href="#">
+        <Link to="/">
           <img
             className="myntra_home"
             src="images/myntra_logo.webp"
             alt="Myntra Home"
           />
-        </a>
+        </Link>
       </div>
       <nav className="nav_bar">
         <a href="#">Men</a>
@@ -41,11 +42,11 @@ function Header() {
           <span className="action_name">Wishlist</span>
         </div>
 
-        <a className="action_container" href="pages/bag.html">
+        <Link to="/bag" className="action_container">
           <IoBagHandleOutline />
           <span className="action_name">Bag</span>
           <span className="bag-item-count">0</span>
-        </a>
+        </Link>
       </div>
     </header>
   );
