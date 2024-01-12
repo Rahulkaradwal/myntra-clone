@@ -1,13 +1,12 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Home from "./components/Home";
 
 function App() {
   return (
     <>
       <Header />
-      <main>
-        <div className="items-container"></div>
-      </main>
+      <Home />
       <Footer />
     </>
   );
