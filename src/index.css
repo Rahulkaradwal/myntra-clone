@@ -219,6 +219,10 @@ header {
   border-radius: 10px;
   cursor: pointer;
 }
+
+.btn-remove {
+  background-color: #f16565;
+}
 .bag-item-count {
   background-color: #f16565;
   white-space: nowrap;
