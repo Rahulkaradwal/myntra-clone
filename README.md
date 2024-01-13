@@ -1,8 +1,5 @@
-# React + Vite
+This project is a clone of the Myntra e-commerce website, designed to enhance skills in React and Redux components. It incorporates key features like adding to cart, removing items from the cart, and calculating item summaries, including total price and discounts. Technologies used include React-router, Link, Bootstrap, Redux, and Reducers. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To set up this project, download it and execute the command `npm install` followed by `npm run dev`.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Additionally, the project relies on a Backend API, available in my Myntra-Backend-Api repository. To use it, download the repository and run `npm install`, then `npm start` to initiate.
