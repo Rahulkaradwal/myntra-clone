@@ -5,10 +5,11 @@ import BagSummary from "./BagSummary";
 function Bag() {
   const { items } = useSelector((store) => store.items);
   const bag = useSelector((store) => store.bag);
-  console.log(items);
-  console.log(bag);
 
-  const bagItem = items.filter((item) => bag.includes(item.id));
+  const bagItem = items.filter((item) => {
+    const itemIndex = bag.indexOf(item.id);
+    return itemIndex >= 0;
+  });
   console.log(bagItem);
 
   return (

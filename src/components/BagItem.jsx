@@ -1,4 +1,7 @@
+import { useDispatch } from "react-redux";
+
 function BagItem({ item }) {
+  const dispatch = useDispatch();
   return (
     <div className="bag-item-container">
       <div className="item-left-part">
