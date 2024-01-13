@@ -7,7 +7,7 @@ const myntraStore = configureStore({
   reducer: {
     items: itemSlice.reducer,
     fetchStatus: fetchStatusSlice.reducer,
-    bag: bagSlice.reducer,
+    bagItems: bagSlice.reducer,
   },
 });
 

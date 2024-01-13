@@ -381,3 +381,7 @@ a.action_container:link {
 .spinner {
   padding: 150px;
 }
+
+.action_container {
+  color: black;
+}

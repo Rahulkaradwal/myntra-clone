@@ -3,8 +3,7 @@ import BagItem from "./BagItem";
 import BagSummary from "./BagSummary";
 
 function Bag() {
-  const { items } = useSelector((store) => store.items);
-
+  const items = useSelector((store) => store.bagItems);
   return (
     <main>
       <div className="bag-page">
