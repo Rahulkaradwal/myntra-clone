@@ -1,8 +1,10 @@
 import { IoPersonOutline, IoBagHandleOutline } from "react-icons/io5";
 import { BsChatLeftHeart } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Header() {
+  const bag = useSelector((store) => store.bag);
   return (
     <header>
       <div className="logo_container">
@@ -45,7 +47,7 @@ function Header() {
         <Link to="/bag" className="action_container">
           <IoBagHandleOutline />
           <span className="action_name">Bag</span>
-          <span className="bag-item-count">0</span>
+          <span className="bag-item-count">{bag.length}</span>
         </Link>
       </div>
     </header>
