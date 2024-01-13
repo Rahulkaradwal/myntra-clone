@@ -3,12 +3,19 @@ import BagItem from "./BagItem";
 import BagSummary from "./BagSummary";
 
 function Bag() {
-  const items = useSelector((store) => store.bagItems);
+  const { items } = useSelector((store) => store.items);
+  const bag = useSelector((store) => store.bag);
+  console.log(items);
+  console.log(bag);
+
+  const bagItem = items.filter((item) => bag.includes(item.id));
+  console.log(bagItem);
+
   return (
     <main>
       <div className="bag-page">
         <div className="bag-items-container">
-          {items.map((item) => (
+          {bagItem.map((item) => (
             <BagItem key={item.id} item={item} />
           ))}
         </div>
