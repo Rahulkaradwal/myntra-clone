@@ -8,13 +8,13 @@ const fetchStatusSlice = createSlice({
   },
   reducers: {
     markFetchingDone(state) {
-      return (state.fetchDone = true);
+      state.fetchDone = true; // Directly mutate the state
     },
     markFetchingStarted(state) {
-      return (state.isLoading = true);
+      state.isLoading = true; // Directly mutate the state
     },
     markFetchingFinished(state) {
-      return (state.isLoading = false);
+      state.isLoading = false; // Directly mutate the state
     },
   },
 });
