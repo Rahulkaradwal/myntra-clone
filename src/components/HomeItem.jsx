@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import Item from "./Item";
 
 function HomeItem() {
-  const { items } = useSelector((state) => state.items);
+  const { items } = useSelector((store) => store.items);
   return (
     <>
       {items.map((item, index) => (
