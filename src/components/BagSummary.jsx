@@ -1,8 +1,24 @@
+import { useSelector } from "react-redux";
+
 function BagSummary() {
-  const totalItem = 5;
-  const totalMRP = 500;
-  const totalDiscount = 100;
-  const finalPayment = 400;
+  const { items } = useSelector((store) => store.items);
+  const bag = useSelector((store) => store.bag);
+
+  const bagItem = items.filter((item) => {
+    const itemIndex = bag.indexOf(item.id);
+    return itemIndex >= 0;
+  });
+
+  const CONVENIENCE_FEES = 99;
+  let totalItem = bag.length;
+  let totalMRP = 0;
+  let totalDiscount = 0;
+
+  bagItem.forEach((bagItem) => {
+    totalMRP += bagItem.original_price - bagItem.current_price;
+  });
+
+  let finalPayment = totalMRP - totalDiscount + CONVENIENCE_FEES;
   return (
     <>
       <div className="bag-details-container">
